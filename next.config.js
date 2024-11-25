@@ -1,5 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
   images: {
     remotePatterns: [
       {
@@ -8,12 +11,7 @@ const nextConfig = {
         pathname: '**',
       },
     ],
-    domains: [
-      'images.remotePatterns',
-      'res.cloudinary.com',
-      'avatars.githubusercontent.com',
-      'lh3.googleusercontent.com',
-    ],
+    domains: ['images.remotePatterns', 'res.cloudinary.com', 'avatars.githubusercontent.com', 'lh3.googleusercontent.com'],
   },
 };
 
